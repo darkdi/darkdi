@@ -14,7 +14,7 @@ So I run checkers that do the comparison, one per language, and then read every 
 
 ### What came out of it
 
-[25 merged pull requests across 21 projects](https://github.com/search?q=is%3Apr+author%3Adarkdi+is%3Amerged&type=pullrequests), among them:
+[26 merged pull requests across 21 projects](https://github.com/search?q=is%3Apr+author%3Adarkdi+is%3Amerged&type=pullrequests), among them:
 
 | | |
 |---|---|
