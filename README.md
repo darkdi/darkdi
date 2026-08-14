@@ -1,0 +1,31 @@
+Backend for a living: 1C-Bitrix and Bitrix24, PHP, MySQL, fourteen years of it. Moscow. The rest of my time goes to a game and to other people's codebases.
+
+### DarkVell
+
+**[github.com/darkdi/darkvell](https://github.com/darkdi/darkvell)**
+
+An open-source browser MMORPG. Phaser on the client, an authoritative NestJS server on the other side, TypeScript across npm workspaces. Authoritative means the server owns the world state and the client only asks: no trusting the browser about where you are or what you hit. That constraint is most of the interesting work, and it is why realtime PvP is the part I care about getting right.
+
+### Reading other people's code
+
+Documentation and the code under it are two statements about the same thing, written at different times, and almost nobody compares them. A `@param` name against the signature below it. A `\param` in a header against the declaration it documents. Linters skip this, because a linter reads the code and this needs you to read the code and the comment next to it.
+
+So I run checkers that do the comparison, one per language, and then read every hit by hand before it becomes anything. The tools are wrong about a third of the time and always in their own favour, so the reading is not optional. What they get wrong goes into a file of its own rather than quietly disappearing.
+
+### What came out of it
+
+[25 merged pull requests across 21 projects](https://github.com/search?q=is%3Apr+author%3Adarkdi+is%3Amerged&type=pullrequests), among them:
+
+| | |
+|---|---|
+| [home-assistant/core](https://github.com/home-assistant/core/pull/178207) | config entry removal was not shielded from a client disconnect. A race, with tests, not a comment fix |
+| [laravel/telescope](https://github.com/laravel/telescope/pull/1753) | merged by Taylor Otwell |
+| [nlohmann/json](https://github.com/nlohmann/json/pull/5363) | merged by Niels Lohmann |
+| [NVIDIA/cudf](https://github.com/NVIDIA/cudf/pull/23564) | 18 Doxygen tags in the C++ API |
+| [mrdoob/three.js](https://github.com/mrdoob/three.js/pull/34226) | stale JSDoc in the WebGPU renderer |
+| [twisted/twisted](https://github.com/twisted/twisted/pull/12775) | eight epytext fields in the core |
+| [saltstack/salt](https://github.com/saltstack/salt/pull/69966) · [tesseract](https://github.com/tesseract-ocr/tesseract/pull/4594) · [mlflow](https://github.com/mlflow/mlflow/pull/24925) · [astropy](https://github.com/astropy/astropy/pull/20205) · [FreeCAD](https://github.com/FreeCAD/FreeCAD/pull/31773) · [qutebrowser](https://github.com/qutebrowser/qutebrowser/pull/8995) · [Prefect](https://github.com/PrefectHQ/prefect/pull/22733) | the rest of the same work |
+
+Three rules I did not have at the start and would not drop now. Read the project's own policy on AI assistance before touching the code, and follow it even when nobody would check. One pull request per project per day, because twelve in a day reads as a campaign no matter how correct each one is. And write the description by hand: if a sentence can be verified by opening the diff, it does not belong in the description.
+
+[rant.ae](https://rant.ae) · Telegram [@rant_root](https://t.me/rant_root)
