@@ -8,9 +8,9 @@ An open-source browser MMORPG. Phaser on the client, an authoritative NestJS ser
 
 ### Reading other people's code
 
-Documentation and the code under it are two statements about the same thing, written at different times, and almost nobody compares them. A `@param` name against the signature below it. A `\param` in a header against the declaration it documents. Linters skip this, because a linter reads the code and this needs you to read the code and the comment next to it.
+I contribute bug fixes and API documentation corrections to other people's projects. The bugs range from infinite recursion and broken Windows paths to object comparisons that throw on valid input and layer-name handling that silently skips work. Sometimes the mismatch is between a comment and a signature; sometimes it is between what the code is meant to do and what it actually does.
 
-So I run checkers that do the comparison, one per language, and then read every hit by hand before it becomes anything. The tools are wrong about a third of the time and always in their own favour, so the reading is not optional. What they get wrong goes into a file of its own rather than quietly disappearing.
+I use language-specific checkers to find suspicious patterns, then inspect each finding in context: the surrounding code, callers, and history. A checker result is a lead, not proof. For behavior changes, I reproduce the failure and add regression tests where practical, checking that they fail before the fix and pass after it. False positives go into a separate record so the tools can improve. The aim is a small, useful patch that a maintainer can verify.
 
 ### What came out of it
 
