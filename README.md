@@ -2,7 +2,7 @@ Backend for a living: 1C-Bitrix and Bitrix24, PHP, MySQL, fourteen years of it. 
 
 ### DarkVell
 
-**[github.com/darkdi/darkvell](https://github.com/darkdi/darkvell)**
+**[darkvell.ru](https://darkvell.ru)**
 
 An open-source browser MMORPG. Phaser on the client, an authoritative NestJS server on the other side, TypeScript across npm workspaces. Authoritative means the server owns the world state and the client only asks: no trusting the browser about where you are or what you hit. That constraint is most of the interesting work, and it is why realtime PvP is the part I care about getting right.
 
